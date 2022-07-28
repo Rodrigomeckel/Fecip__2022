@@ -1,0 +1,32 @@
+c:\users\samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.exe.config
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.exe
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.pdb
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csprojResolveAssemblyReference.cache
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form1.resources
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form2.resources
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Properties.Resources.resources
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.GenerateResource.Cache
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.exe
+C:\Users\Samsung\documents\visual studio 2013\Projects\PROJETO-FECIP\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.pdb
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.exe.config
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.exe
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.pdb
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csprojAssemblyReference.cache
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form1.resources
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form2.resources
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Properties.Resources.resources
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.GenerateResource.cache
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.CoreCompileInputs.cache
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.exe
+C:\Users\adv_m\Downloads\FECIP-2022-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.pdb
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.exe.config
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.exe
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.pdb
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.exe
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\bin\Debug\PROJETO-FECIP.pdb
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csprojAssemblyReference.cache
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form1.resources
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form2.resources
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Properties.Resources.resources
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.GenerateResource.cache
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.CoreCompileInputs.cache
