@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace PROJETO_FECIP
 {
@@ -68,7 +69,28 @@ namespace PROJETO_FECIP
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=DESKTOP-UMO23JP;Integrated Security=True";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            con.Open();
+            string login = "SELECT * FROM CADASTRO WHERE cpf = '" + mtxb_cpf.Text + "'and senha ='" + txb_password.Text +"'";
+            cmd = new SqlCommand(login, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read() == true)
+            {
+
+            }
+
+            else
+            {
+                MessageBox.Show("USUÁRIO OU SENHA INVALIDA","MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                mtxb_cpf.Text = "";
+                txb_password.Text = "";
+                mtxb_cpf.Focus();
+            }
         }
 
         private void txb_password_TextChanged(object sender, EventArgs e)
@@ -79,9 +101,7 @@ namespace PROJETO_FECIP
         private void txb_password_Click_1(object sender, EventArgs e)
         {
             txb_password.Clear();
-            pictureBox3.BackgroundImage = Properties.Resources.cadeado;
-            panel5.ForeColor = Color.FromArgb(78, 184, 206);
-            txb_password.ForeColor = Color.FromArgb(78, 184, 206);
+            
 
         }
 

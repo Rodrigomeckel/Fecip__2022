@@ -43,7 +43,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.mtxb_telefone = new System.Windows.Forms.MaskedTextBox();
-            this.btn_finalizar = new System.Windows.Forms.Button();
+            this.btn_CADASTRAR = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTime = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -215,18 +215,19 @@
             this.mtxb_telefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             this.mtxb_telefone.Click += new System.EventHandler(this.mtxb_telefone_Click);
             // 
-            // btn_finalizar
+            // btn_CADASTRAR
             // 
-            this.btn_finalizar.BackColor = System.Drawing.Color.Cyan;
-            this.btn_finalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_finalizar.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btn_finalizar.Location = new System.Drawing.Point(101, 374);
-            this.btn_finalizar.Name = "btn_finalizar";
-            this.btn_finalizar.Size = new System.Drawing.Size(150, 35);
-            this.btn_finalizar.TabIndex = 16;
-            this.btn_finalizar.Text = "FINALIZAR";
-            this.btn_finalizar.UseVisualStyleBackColor = false;
-            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
+            this.btn_CADASTRAR.BackColor = System.Drawing.Color.Cyan;
+            this.btn_CADASTRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CADASTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CADASTRAR.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btn_CADASTRAR.Location = new System.Drawing.Point(101, 374);
+            this.btn_CADASTRAR.Name = "btn_CADASTRAR";
+            this.btn_CADASTRAR.Size = new System.Drawing.Size(150, 35);
+            this.btn_CADASTRAR.TabIndex = 16;
+            this.btn_CADASTRAR.Text = "CADASTRAR";
+            this.btn_CADASTRAR.UseVisualStyleBackColor = false;
+            this.btn_CADASTRAR.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
             // label2
             // 
@@ -343,17 +344,17 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // dateTimePicker1
+            // dateTime
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(66, 105);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
-            this.dateTimePicker1.TabIndex = 27;
+            this.dateTime.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTime.CalendarForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateTime.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.dateTime.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTime.Location = new System.Drawing.Point(66, 105);
+            this.dateTime.Name = "dateTime";
+            this.dateTime.Size = new System.Drawing.Size(99, 20);
+            this.dateTime.TabIndex = 27;
             // 
             // Form2
             // 
@@ -361,7 +362,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(366, 437);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTime);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -372,7 +373,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btn_finalizar);
+            this.Controls.Add(this.btn_CADASTRAR);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.mtxb_telefone);
             this.Controls.Add(this.pictureBox4);
@@ -424,7 +425,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.MaskedTextBox mtxb_telefone;
-        private System.Windows.Forms.Button btn_finalizar;
+        private System.Windows.Forms.Button btn_CADASTRAR;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label3;
@@ -436,6 +437,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTime;
     }
 }
