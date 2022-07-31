@@ -41,6 +41,7 @@
             this.lbl_cadastro = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -53,7 +54,7 @@
             this.mtxb_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_cpf.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_cpf.Location = new System.Drawing.Point(78, 156);
-            this.mtxb_cpf.Mask = "000.000.000-00";
+            this.mtxb_cpf.Mask = "00000000000";
             this.mtxb_cpf.Name = "mtxb_cpf";
             this.mtxb_cpf.Size = new System.Drawing.Size(191, 13);
             this.mtxb_cpf.TabIndex = 2;
@@ -145,11 +146,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(337, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 16);
+            this.label1.Size = new System.Drawing.Size(21, 20);
             this.label1.TabIndex = 12;
             this.label1.Text = "X";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -188,12 +189,25 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Password";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(303, -1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 37);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "-";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(366, 437);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lbl_cadastro);
@@ -238,6 +252,7 @@
         private System.Windows.Forms.Label lbl_cadastro;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

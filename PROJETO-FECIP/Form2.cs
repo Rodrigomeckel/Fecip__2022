@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
 
+
 namespace PROJETO_FECIP
 {
     public partial class Form2 : Form
@@ -49,21 +50,33 @@ namespace PROJETO_FECIP
 
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
-            if (txb_username.Text == "" && dateTime.Text == "" && mtxb_telefone.Text == "" && mtxb_cpf_cadastro.Text == "" && txb_password_cadastro.Text == "")
+            if (txb_username.Text != "" && txb_password_cadastro.Text != "" &&  dateTime.Text != "" && mtxb_telefone.Text != "" && mtxb_cpf_cadastro.Text != "")
             {
                 con.Open();
-                string CADASTRAR = " insert into CADASTRO(nome_completo, dta_nasc, telefone, cpf, senha) values('" + txb_username.Text+"','"+dateTime.Text+"','"+mtxb_telefone.Text+"','"+mtxb_cpf_cadastro+"','"+txb_password_cadastro.Text+"')";
+
+                string CADASTRAR = " insert into CADASTRO(nome_completo, senha, dta_nasc, telefone, cpf) values('" + txb_username.Text + "','" + txb_password_cadastro.Text + "','" + dateTime.Value.ToString("dd/MM/yy") + "','"+this.mtxb_telefone.Text+"','"+this.mtxb_cpf_cadastro.Text+"')";
+
                 cmd = new SqlCommand(CADASTRAR, con);
+
+                
                 cmd.ExecuteNonQuery();
+
                 con.Close();
+
                 txb_username.Text = ""; mtxb_telefone.Text = ""; mtxb_cpf_cadastro.Text = ""; txb_password_cadastro.Text = "";
 
                 MessageBox.Show("CADASTRO CRIADO COM SUCESSO", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                Close();
+            }
+
+            else
+            {
+               MessageBox.Show("PREENCHA TODOS OS CAMPOS PARA FINALIZAR", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
-            Close();
+           
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -159,6 +172,11 @@ namespace PROJETO_FECIP
             {
                 txb_password_cadastro.PasswordChar = '*';
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

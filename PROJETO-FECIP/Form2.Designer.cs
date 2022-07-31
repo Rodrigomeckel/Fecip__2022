@@ -47,8 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txb_password_cadastro = new System.Windows.Forms.TextBox();
@@ -56,6 +54,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dateTime = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -64,8 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,9 +92,10 @@
             this.txb_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_username.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.txb_username.Location = new System.Drawing.Point(64, 44);
+            this.txb_username.Location = new System.Drawing.Point(66, 43);
+            this.txb_username.Multiline = true;
             this.txb_username.Name = "txb_username";
-            this.txb_username.Size = new System.Drawing.Size(234, 15);
+            this.txb_username.Size = new System.Drawing.Size(232, 20);
             this.txb_username.TabIndex = 5;
             this.txb_username.Click += new System.EventHandler(this.txb_username_Click);
             this.txb_username.TextChanged += new System.EventHandler(this.txb_username_TextChanged);
@@ -147,8 +149,8 @@
             this.mtxb_cpf_cadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.mtxb_cpf_cadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_cpf_cadastro.ForeColor = System.Drawing.SystemColors.Window;
-            this.mtxb_cpf_cadastro.Location = new System.Drawing.Point(66, 240);
-            this.mtxb_cpf_cadastro.Mask = "000.000.000-00";
+            this.mtxb_cpf_cadastro.Location = new System.Drawing.Point(66, 239);
+            this.mtxb_cpf_cadastro.Mask = "00000000000";
             this.mtxb_cpf_cadastro.Name = "mtxb_cpf_cadastro";
             this.mtxb_cpf_cadastro.Size = new System.Drawing.Size(232, 13);
             this.mtxb_cpf_cadastro.TabIndex = 11;
@@ -208,7 +210,7 @@
             this.mtxb_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_telefone.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_telefone.Location = new System.Drawing.Point(66, 173);
-            this.mtxb_telefone.Mask = "(00) 00000-0000";
+            this.mtxb_telefone.Mask = "00 00000-0000";
             this.mtxb_telefone.Name = "mtxb_telefone";
             this.mtxb_telefone.Size = new System.Drawing.Size(232, 13);
             this.mtxb_telefone.TabIndex = 13;
@@ -221,7 +223,7 @@
             this.btn_CADASTRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CADASTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CADASTRAR.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btn_CADASTRAR.Location = new System.Drawing.Point(101, 374);
+            this.btn_CADASTRAR.Location = new System.Drawing.Point(101, 382);
             this.btn_CADASTRAR.Name = "btn_CADASTRAR";
             this.btn_CADASTRAR.Size = new System.Drawing.Size(150, 35);
             this.btn_CADASTRAR.TabIndex = 16;
@@ -252,37 +254,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(338, 9);
+            this.label3.Location = new System.Drawing.Point(333, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 16);
+            this.label3.Size = new System.Drawing.Size(21, 20);
             this.label3.TabIndex = 19;
             this.label3.Text = "X";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(66, 313);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(232, 1);
-            this.panel9.TabIndex = 8;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(200, 1);
-            this.panel10.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(63, 277);
+            this.label4.Location = new System.Drawing.Point(63, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 21;
@@ -291,7 +276,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::PROJETO_FECIP.Properties.Resources.cadeado1;
-            this.pictureBox3.Location = new System.Drawing.Point(24, 278);
+            this.pictureBox3.Location = new System.Drawing.Point(24, 292);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(26, 29);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -304,10 +289,11 @@
             this.txb_password_cadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_password_cadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_password_cadastro.ForeColor = System.Drawing.SystemColors.Window;
-            this.txb_password_cadastro.Location = new System.Drawing.Point(66, 294);
+            this.txb_password_cadastro.Location = new System.Drawing.Point(66, 297);
+            this.txb_password_cadastro.Multiline = true;
             this.txb_password_cadastro.Name = "txb_password_cadastro";
             this.txb_password_cadastro.PasswordChar = '*';
-            this.txb_password_cadastro.Size = new System.Drawing.Size(232, 15);
+            this.txb_password_cadastro.Size = new System.Drawing.Size(232, 22);
             this.txb_password_cadastro.TabIndex = 23;
             this.txb_password_cadastro.Click += new System.EventHandler(this.txb_password_cadastro_Click);
             this.txb_password_cadastro.TextChanged += new System.EventHandler(this.txb_password_cadastro_TextChanged);
@@ -325,7 +311,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(63, 27);
+            this.label6.Location = new System.Drawing.Point(63, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 25;
@@ -336,7 +322,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox1.Location = new System.Drawing.Point(193, 332);
+            this.checkBox1.Location = new System.Drawing.Point(193, 346);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(105, 19);
             this.checkBox1.TabIndex = 26;
@@ -356,12 +342,43 @@
             this.dateTime.Size = new System.Drawing.Size(99, 20);
             this.dateTime.TabIndex = 27;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(294, -2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(28, 37);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "-";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Location = new System.Drawing.Point(66, 320);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(232, 1);
+            this.panel11.TabIndex = 13;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 1);
+            this.panel12.TabIndex = 5;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(366, 437);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTime);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label6);
@@ -369,7 +386,6 @@
             this.Controls.Add(this.txb_password_cadastro);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label2);
@@ -401,8 +417,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,8 +445,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txb_password_cadastro;
@@ -438,5 +452,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
     }
 }

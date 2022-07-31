@@ -30,3 +30,4 @@ C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.
 C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Properties.Resources.resources
 C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.GenerateResource.cache
 C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO-FECIP.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Desktop\FECIP\FECIP-main\PROJETO-FECIP\obj\Debug\PROJETO_FECIP.Form3.resources

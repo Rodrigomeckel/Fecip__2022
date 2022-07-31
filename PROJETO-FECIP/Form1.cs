@@ -80,12 +80,13 @@ namespace PROJETO_FECIP
 
             if (dr.Read() == true)
             {
-
+                Form3 frm3 = new Form3();
+                frm3.ShowDialog();
             }
 
             else
             {
-                MessageBox.Show("USUÁRIO OU SENHA INVALIDA","MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("CPF OU SENHA INVALIDA","MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 mtxb_cpf.Text = "";
                 txb_password.Text = "";
@@ -155,6 +156,11 @@ namespace PROJETO_FECIP
             {
                 txb_password.PasswordChar = '*';
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
