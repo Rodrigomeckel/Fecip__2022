@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace PROJETO_FECIP
 {
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -80,10 +80,15 @@ namespace PROJETO_FECIP
 
             if (dr.Read() == true)
             {
-                Form3 frm3 = new Form3();
-                frm3.ShowDialog();
+                Form4 frm4 = new Form4();
+                frm4.ShowDialog();
             }
 
+            else if (mtxb_cpf.Text == string.Empty && txb_password.Text == string.Empty)
+            {
+                MessageBox.Show("PREENCHA TODOS OS CAMPOS PARA FINALIZAR", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+               
             else
             {
                 MessageBox.Show("CPF OU SENHA INVALIDA","MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -161,6 +166,13 @@ namespace PROJETO_FECIP
         private void label3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void lbl_trocar_senha_Click(object sender, EventArgs e)
+        {
+            Form3 fm3 = new Form3();
+            fm3.ShowDialog();
+            
         }
     }
 }

@@ -13,11 +13,13 @@ using System.Data.SqlClient;
 
 namespace PROJETO_FECIP
 {
-    public partial class Form2 : Form
+    public partial class Form2 : System.Windows.Forms.Form
     {
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-UMO23JP;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
+
+
 
 
 
@@ -48,6 +50,7 @@ namespace PROJETO_FECIP
         Point DragForm;
         bool Dragging;
 
+        
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
             if (txb_username.Text != "" && txb_password_cadastro.Text != "" &&  dateTime.Text != "" && mtxb_telefone.Text != "" && mtxb_cpf_cadastro.Text != "")
@@ -55,19 +58,14 @@ namespace PROJETO_FECIP
                 con.Open();
 
                 string CADASTRAR = " insert into CADASTRO(nome_completo, senha, dta_nasc, telefone, cpf) values('" + txb_username.Text + "','" + txb_password_cadastro.Text + "','" + dateTime.Value.ToString("dd/MM/yy") + "','"+this.mtxb_telefone.Text+"','"+this.mtxb_cpf_cadastro.Text+"')";
-
                 cmd = new SqlCommand(CADASTRAR, con);
-
-                
                 cmd.ExecuteNonQuery();
-
                 con.Close();
 
                 txb_username.Text = ""; mtxb_telefone.Text = ""; mtxb_cpf_cadastro.Text = ""; txb_password_cadastro.Text = "";
-
                 MessageBox.Show("CADASTRO CRIADO COM SUCESSO", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 Close();
+
             }
 
             else

@@ -34,14 +34,15 @@
             this.txb_password = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_login = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_cadastro = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl_trocar_senha = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -54,7 +55,7 @@
             this.mtxb_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_cpf.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_cpf.Location = new System.Drawing.Point(78, 156);
-            this.mtxb_cpf.Mask = "00000000000";
+            this.mtxb_cpf.Mask = "000.000.000-00";
             this.mtxb_cpf.Name = "mtxb_cpf";
             this.mtxb_cpf.Size = new System.Drawing.Size(191, 13);
             this.mtxb_cpf.TabIndex = 2;
@@ -108,40 +109,10 @@
             this.btn_login.Location = new System.Drawing.Point(96, 299);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(150, 35);
-            this.btn_login.TabIndex = 9;
+            this.btn_login.TabIndex = 0;
             this.btn_login.Text = "ACESSAR";
             this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PROJETO_FECIP.Properties.Resources.logo_max;
-            this.pictureBox4.Location = new System.Drawing.Point(136, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(76, 89);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PROJETO_FECIP.Properties.Resources.cadeado1;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 218);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 29);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PROJETO_FECIP.Properties.Resources.CPF;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 142);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 34);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -201,12 +172,56 @@
             this.label3.Text = "-";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // lbl_trocar_senha
+            // 
+            this.lbl_trocar_senha.AutoSize = true;
+            this.lbl_trocar_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_trocar_senha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_trocar_senha.Location = new System.Drawing.Point(99, 397);
+            this.lbl_trocar_senha.Name = "lbl_trocar_senha";
+            this.lbl_trocar_senha.Size = new System.Drawing.Size(131, 13);
+            this.lbl_trocar_senha.TabIndex = 17;
+            this.lbl_trocar_senha.Text = "esqueceu sua senha?";
+            this.lbl_trocar_senha.Click += new System.EventHandler(this.lbl_trocar_senha_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PROJETO_FECIP.Properties.Resources.logo_max;
+            this.pictureBox4.Location = new System.Drawing.Point(136, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(76, 89);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PROJETO_FECIP.Properties.Resources.cadeado1;
+            this.pictureBox3.Location = new System.Drawing.Point(38, 218);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PROJETO_FECIP.Properties.Resources.CPF;
+            this.pictureBox2.Location = new System.Drawing.Point(38, 142);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
+            this.AcceptButton = this.btn_login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(366, 437);
+            this.Controls.Add(this.lbl_trocar_senha);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox1);
@@ -253,6 +268,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_trocar_senha;
     }
 }
 

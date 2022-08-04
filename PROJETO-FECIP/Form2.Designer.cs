@@ -150,7 +150,7 @@
             this.mtxb_cpf_cadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_cpf_cadastro.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_cpf_cadastro.Location = new System.Drawing.Point(66, 239);
-            this.mtxb_cpf_cadastro.Mask = "00000000000";
+            this.mtxb_cpf_cadastro.Mask = "000.000.000-00";
             this.mtxb_cpf_cadastro.Name = "mtxb_cpf_cadastro";
             this.mtxb_cpf_cadastro.Size = new System.Drawing.Size(232, 13);
             this.mtxb_cpf_cadastro.TabIndex = 11;
@@ -210,7 +210,7 @@
             this.mtxb_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_telefone.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_telefone.Location = new System.Drawing.Point(66, 173);
-            this.mtxb_telefone.Mask = "00 00000-0000";
+            this.mtxb_telefone.Mask = "(00) 00000-0000";
             this.mtxb_telefone.Name = "mtxb_telefone";
             this.mtxb_telefone.Size = new System.Drawing.Size(232, 13);
             this.mtxb_telefone.TabIndex = 13;
@@ -333,9 +333,8 @@
             // dateTime
             // 
             this.dateTime.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTime.CalendarForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateTime.CalendarForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.dateTime.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.dateTime.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTime.Location = new System.Drawing.Point(66, 105);
             this.dateTime.Name = "dateTime";
