@@ -57,24 +57,72 @@ namespace PROJETO_FECIP
             {
                 con.Open();
 
-                string CADASTRAR = " insert into CADASTRO(nome_completo, senha, dta_nasc, telefone, cpf) values('" + txb_username.Text + "','" + txb_password_cadastro.Text + "','" + dateTime.Value.ToString("dd/MM/yy") + "','"+this.mtxb_telefone.Text+"','"+this.mtxb_cpf_cadastro.Text+"')";
+                string CADASTRAR = " insert into CADASTRO(NOME_COMPLETO, SENHA, DTA_NASC, TELEFONE, CPF) values('" + txb_username.Text + "','" + txb_password_cadastro.Text + "','" + dateTime.Value.ToString("dd/MM/yy") + "','"+this.mtxb_telefone.Text+"','"+this.mtxb_cpf_cadastro.Text+"')";
                 cmd = new SqlCommand(CADASTRAR, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                txb_username.Text = ""; mtxb_telefone.Text = ""; mtxb_cpf_cadastro.Text = ""; txb_password_cadastro.Text = "";
-                MessageBox.Show("CADASTRO CRIADO COM SUCESSO", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Close();
+                if(mtxb_cpf_cadastro.Text == string.Empty)
+                {
+                    try
+                    {
+                        if (mtxb_cpf_cadastro.Text == string.Empty)
+                        {
+                            MessageBox.Show("VOCÊ PRESCISA DIGITAR O CPF !!", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+                        con.Open();
+
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.HasRows == false)
+                        {
+
+                            throw new Exception("ESTE CPF JÁ ESTÁ CADASTRADO!!");
+
+
+                        }
+
+                    }
+
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    finally
+                    {
+                        con.Close();
+                    }
+                }
+
+                else
+                {
+                    txb_username.Text = ""; mtxb_telefone.Text = ""; mtxb_cpf_cadastro.Text = ""; txb_password_cadastro.Text = "";
+                    MessageBox.Show("CADASTRO CRIADO COM SUCESSO", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+
+               
+               
 
             }
+
+
 
             else
             {
                MessageBox.Show("PREENCHA TODOS OS CAMPOS PARA FINALIZAR", "MESAGEM", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+            this.Hide();
+            Form1 fm1 = new Form1();
+            fm1.ShowDialog();
 
-           
+            Form2 fm2 = new Form2();
+            fm1.Closed += (s, agrs) => this.Close();
+            fm1.ShowDialog();
+
         }
 
         private void label3_Click(object sender, EventArgs e)

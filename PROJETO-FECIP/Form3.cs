@@ -79,7 +79,7 @@ namespace PROJETO_FECIP
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            string alterar = "update CADASTRO set senha = '" + txb_password.Text+ "'";
+            string alterar = "update CADASTRO set SENHA = '" + txb_password.Text+ "'";
             cmd = new SqlCommand(alterar, con);
 
             try
@@ -101,9 +101,12 @@ namespace PROJETO_FECIP
                 con.Close();
             }
 
-            this.Close();
+            Form1 fm1 = new Form1();
+            fm1.ShowDialog();
 
-           
+            Form3 fm3 = new Form3();
+            fm1.Closed += (s, agrs) => this.Close();
+            fm1.ShowDialog();
 
         }
 
@@ -114,7 +117,7 @@ namespace PROJETO_FECIP
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             
-            string pesquisar = "SELECT * FROM CADASTRO WHERE cpf = '" + mtxb_alterar_cpf.Text + "'";
+            string pesquisar = "SELECT * FROM CADASTRO WHERE CPF = '" + mtxb_alterar_cpf.Text + "'";
             cmd = new SqlCommand(pesquisar, con);
 
             try
@@ -141,7 +144,7 @@ namespace PROJETO_FECIP
 
                 dr.Read();
 
-                txb_password.Text = Convert.ToString(dr["senha"]);
+                txb_password.Text = Convert.ToString(dr["SENHA"]);
             }
 
             catch(Exception ex)

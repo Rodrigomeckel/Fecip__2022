@@ -59,7 +59,7 @@ namespace PROJETO_FECIP
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void txb_password_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace PROJETO_FECIP
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             con.Open();
-            string login = "SELECT * FROM CADASTRO WHERE cpf = '" + mtxb_cpf.Text + "'and senha ='" + txb_password.Text +"'";
+            string login = "SELECT * FROM CADASTRO WHERE CPF = '" + mtxb_cpf.Text + "'and SENHA ='" + txb_password.Text +"'";
             cmd = new SqlCommand(login, con);
             SqlDataReader dr = cmd.ExecuteReader();
 
@@ -146,8 +146,13 @@ namespace PROJETO_FECIP
 
         private void lbl_cadastro_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form2 fm2 = new Form2();
             fm2.ShowDialog();
+
+            Form1 fm1 = new Form1();
+            fm1.Closed += (s, agrs) => this.Close();
+            fm1.ShowDialog();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -172,7 +177,11 @@ namespace PROJETO_FECIP
         {
             Form3 fm3 = new Form3();
             fm3.ShowDialog();
-            
+
+            Form1 fm1 = new Form1();
+            fm1.Closed += (s, agrs) => this.Close();
+            fm1.ShowDialog();
+
         }
     }
 }

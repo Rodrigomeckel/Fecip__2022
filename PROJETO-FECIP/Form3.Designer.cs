@@ -220,7 +220,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = ".";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form3_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form3_MouseMove);
