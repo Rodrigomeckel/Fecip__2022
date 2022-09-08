@@ -27,6 +27,7 @@ namespace PROJETO_FECIP
 
       );
 
+
       
 
         public Form1()
@@ -35,6 +36,8 @@ namespace PROJETO_FECIP
 
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+
         }
 
         //======= mover forms
@@ -56,6 +59,7 @@ namespace PROJETO_FECIP
         {
             
         }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {

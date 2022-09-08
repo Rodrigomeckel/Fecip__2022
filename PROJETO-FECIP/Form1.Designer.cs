@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.mtxb_cpf = new System.Windows.Forms.MaskedTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -51,7 +52,7 @@
             // 
             // mtxb_cpf
             // 
-            this.mtxb_cpf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.mtxb_cpf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(120)))));
             this.mtxb_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_cpf.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_cpf.Location = new System.Drawing.Point(78, 156);
@@ -81,7 +82,7 @@
             // 
             // txb_password
             // 
-            this.txb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(120)))));
             this.txb_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_password.ForeColor = System.Drawing.SystemColors.MenuBar;
@@ -117,6 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(337, 9);
@@ -129,6 +131,7 @@
             // lbl_cadastro
             // 
             this.lbl_cadastro.AutoSize = true;
+            this.lbl_cadastro.BackColor = System.Drawing.Color.Transparent;
             this.lbl_cadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cadastro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_cadastro.Location = new System.Drawing.Point(35, 364);
@@ -141,18 +144,20 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBox1.Location = new System.Drawing.Point(185, 265);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(93, 17);
             this.checkBox1.TabIndex = 14;
             this.checkBox1.Text = "Mostrar senha";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(75, 205);
             this.label2.Name = "label2";
@@ -163,6 +168,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(303, -1);
@@ -175,6 +181,7 @@
             // lbl_trocar_senha
             // 
             this.lbl_trocar_senha.AutoSize = true;
+            this.lbl_trocar_senha.BackColor = System.Drawing.Color.Transparent;
             this.lbl_trocar_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_trocar_senha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_trocar_senha.Location = new System.Drawing.Point(99, 397);
@@ -206,6 +213,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::PROJETO_FECIP.Properties.Resources.CPF;
             this.pictureBox2.Location = new System.Drawing.Point(38, 142);
             this.pictureBox2.Name = "pictureBox2";
@@ -219,7 +227,9 @@
             this.AcceptButton = this.btn_login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(120)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(366, 437);
             this.Controls.Add(this.lbl_trocar_senha);
             this.Controls.Add(this.label3);
