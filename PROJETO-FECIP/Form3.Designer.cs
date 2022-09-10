@@ -90,7 +90,7 @@
             // 
             // mtxb_alterar_cpf
             // 
-            this.mtxb_alterar_cpf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.mtxb_alterar_cpf.BackColor = System.Drawing.Color.Red;
             this.mtxb_alterar_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtxb_alterar_cpf.ForeColor = System.Drawing.SystemColors.Window;
             this.mtxb_alterar_cpf.Location = new System.Drawing.Point(88, 130);
@@ -159,7 +159,7 @@
             // 
             // txb_password
             // 
-            this.txb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txb_password.BackColor = System.Drawing.Color.Red;
             this.txb_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_password.ForeColor = System.Drawing.SystemColors.MenuBar;
@@ -202,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(366, 437);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_pesquizar);
