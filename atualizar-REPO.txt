@@ -1,9 +1,19 @@
-> git status
+> git init 
 
 > git add .
 
 > git commit -m "atualização-projeto"
 
-> git pull origin main
+> git remote set -url origin https://github.com/Rodrigomeckel/Fecip__2022
 
-> git push origin main
+> git branch -M main
+
+> git remote add origin
+
+> git checkout main
+
+> git fetch origin main 
+
+> git merge origin main 
+
+> git push -u origin main
